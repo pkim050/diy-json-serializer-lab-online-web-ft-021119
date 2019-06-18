@@ -19,9 +19,6 @@ $(function() {
         $("#product-" + id).html(descriptionText);
       });
     });
-    $.getJSON("/products/" + id + "/product_data", function() {
-      $("#body-" + id).html(data["description"]);
-    });
   });
 });
 </script>
