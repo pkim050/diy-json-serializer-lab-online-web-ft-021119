@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :new, :create, :show]
   get '/products/:id/description', to: 'products#description'
   get '/products/:id/inventory', to: 'products#inventory'
-  get '/prodcuts/:id/product_data', to: 'products#product_data'
+  get '/prodcuts/:id/data', to: 'products#data'
 end
