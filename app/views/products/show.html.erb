@@ -11,6 +11,7 @@ $(function () {
     $.getJSON("/products/" + nextId + "/product_data", function(data) {
       $(".productName").text(data["name"]);
       $(".productDescription").text(data["description"]);
+      $(".productPrice").text(data["price"]);
       $(".js-next").attr("data-id", nextId);
     });
   });
